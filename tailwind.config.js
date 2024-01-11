@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'biru-tua' : '#02455C',
         'biru-muda' : '#F0FBFF',
+        'oren': '#EE982B'
       },
     },
     fontFamily: {

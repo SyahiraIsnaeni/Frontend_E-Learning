@@ -555,6 +555,10 @@ video {
   margin-right: auto;
 }
 
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
 .mr-4{
   margin-right: 1rem;
 }
@@ -575,6 +579,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -589,6 +597,10 @@ video {
 
 .h-8{
   height: 2rem;
+}
+
+.h-9{
+  height: 2.25rem;
 }
 
 .w-1\/2{
@@ -642,6 +654,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -658,6 +675,11 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg{
@@ -685,6 +707,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.leading-normal{
+  line-height: 1.5;
 }
 
 .text-biru-tua{
@@ -747,7 +773,28 @@ video {
   color: rgb(238 152 43 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:mx-16{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .sm\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (min-width: 768px){
+  .md\:mx-28{
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
   .md\:-mt-5{
     margin-top: -1.25rem;
   }
@@ -787,12 +834,21 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:mx-56{
+    margin-left: 14rem;
+    margin-right: 14rem;
+  }
+
   .lg\:-mt-12{
     margin-top: -3rem;
   }
 
   .lg\:-mt-16{
     margin-top: -4rem;
+  }
+
+  .lg\:mb-12{
+    margin-bottom: 3rem;
   }
 
   .lg\:mt-1{
@@ -805,6 +861,14 @@ video {
 
   .lg\:mt-3{
     margin-top: 0.75rem;
+  }
+
+  .lg\:mt-32{
+    margin-top: 8rem;
+  }
+
+  .lg\:mt-8{
+    margin-top: 2rem;
   }
 
   .lg\:h-11{
@@ -856,12 +920,21 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:mx-64{
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
   .xl\:-mt-24{
     margin-top: -6rem;
   }
 
-  .xl\:-mt-5{
-    margin-top: -1.25rem;
+  .xl\:-mt-3{
+    margin-top: -0.75rem;
+  }
+
+  .xl\:mb-16{
+    margin-bottom: 4rem;
   }
 
   .xl\:mt-14{

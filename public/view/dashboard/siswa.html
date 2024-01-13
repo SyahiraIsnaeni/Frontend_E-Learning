@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <title>E-Learning Student Dashboard</title>
     <link rel="icon" href="../../assets/logo.png" type="image/png" />
-    <link href="/public/css/output.css" rel="stylesheet" />
-    <!-- <link href="../../css/index.css" rel="stylesheet" /> -->
+    <!-- <link href="/public/css/output.css" rel="stylesheet" /> -->
+    <link href="../../css/index.css" rel="stylesheet" />
 
     <!-- PENTING!!!! -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   </head>
   <body class="bg-biru-muda font-learn">
     <!-- NAVBAR -->
-    <nav class="sticky bg-biru-tua py-3 top-0 w-full z-10">
+    <nav class="sticky bg-biru-tua py-3 top-0 w-full z-10 mb-7">
       <div class="md:hidden relative">
         <div class="ml-5 flex items-center">
           <img src="../../assets/logo.png" class="w-10 my-auto" />
@@ -40,32 +40,32 @@
         </div>
         <!-- Navigasi Hamburger -->
         <div
-          class="hidden md:flex flex-col items-start absolute mt-2.5 right-0 bg-[#02455C] p-4 w-48 rounded-l-md rounded-t-none opacity-95 h-screen"
+          class="hidden md:flex flex-col items-start absolute mt-3 right-0 bg-[#02455C] p-4 w-48 rounded-l-md rounded-t-none opacity-95 h-screen"
           id="mobileMenu"
         >
           <a
             href="#"
-            class="text-white py-2 block text-end text-sm hover:text-oren"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
             >Dashboard</a
           >
           <a
             href="#"
-            class="text-white py-2 block text-end text-sm hover:text-oren"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
             >My Courses</a
           >
           <a
             href="#"
-            class="text-white py-2 block text-end text-sm hover:text-oren"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
             >My Profile</a
           >
           <a
             href="#"
-            class="text-white py-2 block text-end text-sm hover:text-oren"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
             >Tutorial</a
           >
           <a
             href="#"
-            class="text-white py-2 block text-end text-sm hover:text-oren"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
             >Logout</a
           >
           <!-- Tambahkan navigasi lainnya sesuai kebutuhan -->
@@ -83,9 +83,17 @@
       </script>
     </nav>
 
+    <!-- SELAMAT DATANG -->
+    <div class="mx-5">
+      <h1 class="font-bold text-lg">Selamat Datang Syahira</h1>
+      <p class="font-medium text-sm mt-1.5">
+        Selamat belajar, dunia menanti kecerdasanmu!
+      </p>
+    </div>
+
     <!-- CONTENT -->
-    <section class="mx-5 mt-7 mb-7">
-      <div class="bg-[#31587B] py-4 px-4 rounded-lg relative">
+    <section class="mx-5 mt-8 mb-7">
+      <div class="bg-[#31587B] py-5 px-5 rounded-lg relative">
         <div class="flex items-left justify-left mb-5">
           <svg class="w-40 h-40">
             <g transform="scale(4)">
@@ -118,44 +126,46 @@
               fill="#000"
               id="progressText"
               font-weight="bold"
-            >
-            </text>
+            ></text>
           </svg>
         </div>
+
         <div class="text-white">
           <h1 class="font-semibold text-base">Progres Aktivitas Anda</h1>
-          <p class="font-thin text-xs">
+          <p class="font-thin text-xs tracking-wide mt-1">
             Terdapat beberapa kegiatan menarik yang perlu kamu selesaikan. Ayo,
             jangan tunggu lebih lama lagi, selesaikan aktivitasnya sekarang.
           </p>
         </div>
       </div>
       <div class="bg-[#00ABA2] py-4 px-4 rounded-lg mt-7 bg-opacity-70">
-        <h1 class="text-black font-bold text-sm">Aktivitas Belajar</h1>
+        <h1 class="text-black font-bold text-base">Aktivitas Belajar</h1>
         <div class="">
           <div class="mb-2 bg-[#F1F1E6] rounded-md">
             <a href="#">
-              <div class="text-black mt-3 py-2.5 px-3">
-                <h2 class="font-semibold text-xs">Tugas Termodinamika</h2>
-                <p class="font-normal text-xs mt-1">Fisika X IPA 3</p>
+              <div class="text-black mt-4 py-3 px-3">
+                <h2 class="font-semibold text-[13px]">Tugas Termodinamika</h2>
+                <p class="font-normal text-xs mt-1.5">Fisika X IPA 3</p>
               </div>
             </a>
           </div>
           <div class="mb-2 bg-[#F1F1E6] rounded-md">
             <a href="#">
-              <div class="text-black mt-3 py-2.5 px-3">
-                <h2 class="font-semibold text-xs">
+              <div class="text-black mt-3 py-3 px-3">
+                <h2 class="font-semibold text-[13px]">
                   Ujian Integral Trigonometri
                 </h2>
-                <p class="font-normal text-xs mt-1">Fisika X IPA 3</p>
+                <p class="font-normal text-xs mt-1.5">Fisika X IPA 3</p>
               </div>
             </a>
           </div>
           <div class="mb-2 bg-[#F1F1E6] rounded-md">
             <a href="#">
-              <div class="text-black mt-3 py-2.5 px-3">
-                <h2 class="font-semibold text-xs">Materi Limit Tak Hingga</h2>
-                <p class="font-normal text-xs mt-1">Fisika X IPA 3</p>
+              <div class="text-black mt-3 py-3 px-3">
+                <h2 class="font-semibold text-[13px]">
+                  Materi Limit Tak Hingga
+                </h2>
+                <p class="font-normal text-xs mt-1.5">Fisika X IPA 3</p>
               </div>
             </a>
           </div>
@@ -165,13 +175,13 @@
         document.addEventListener("DOMContentLoaded", function () {
           const progress = document.getElementById("progress");
           const progressText = document.getElementById("progressText");
-  
+
           function updateProgress(percentage) {
             const dashArray = (percentage / 100) * 100;
             progress.style.strokeDasharray = `${dashArray}, 100`;
             progressText.textContent = `${percentage}%`;
           }
-  
+
           // Example: Set the progress to 50%
           updateProgress(75);
         });

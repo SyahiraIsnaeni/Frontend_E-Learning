@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>E-Learning Student Dashboard</title>
     <link rel="icon" href="../../assets/logo.png" type="image/png" />
-    <link href="/public/css/output.css" rel="stylesheet" />
-    <!-- <link href="../../css/index.css" rel="stylesheet" /> -->
+    <!-- <link href="/public/css/output.css" rel="stylesheet" /> -->
+    <link href="../../css/index.css" rel="stylesheet" />
 
     <!-- PENTING!!!! -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -38,6 +38,7 @@
             </svg>
           </div>
         </div>
+        
         <!-- Navigasi Hamburger -->
         <div
           class="hidden md:flex flex-col items-start absolute mt-3 right-0 bg-[#02455C] p-4 w-48 rounded-l-md rounded-t-none opacity-95 h-screen"
@@ -64,7 +65,7 @@
             >Tutorial</a
           >
           <a
-            href="#"
+            href="../login/siswa.html"
             class="text-white py-2 block text-center text-sm hover:text-oren"
             >Logout</a
           >
@@ -86,15 +87,16 @@
     <!-- SELAMAT DATANG -->
     <div class="mx-5">
       <h1 class="font-bold text-lg">Selamat Datang Syahira</h1>
-      <p class="font-medium text-[15px] mt-2">
+      <p class="font-medium text-[14px] mt-2">
         Selamat belajar, dunia menanti kecerdasanmu!
       </p>
     </div>
 
     <!-- CONTENT -->
-    <section class="mx-5 mt-8 mb-7">
+    <section class="mx-5 mt-8 mb-10">
       <div class="bg-[#244868] py-5 px-5 rounded-lg relative bg-opacity-95">
         <div class="flex items-center">
+          <!-- PROGRES BAR -->
           <div class="flex items-left justify-left mb-5">
             <svg class="w-40 h-40">
               <g transform="scale(4)">
@@ -134,20 +136,25 @@
           <!-- KETERANGAN -->
           <div class="block ml-5">
             <div class="flex items-center -mt-10">
-                <div class="w-4 h-2.5 bg-oren"></div>
-                <p class="block ml-2 text-[11px] text-white font-thin tracking-wide">
-                  Progres yang sudah dikerjakan
-                </p>
-              </div>
+              <div class="w-4 h-2.5 bg-oren"></div>
+              <p
+                class="block ml-2 text-[11px] text-white font-thin tracking-wide"
+              >
+                Progres yang sudah dikerjakan
+              </p>
+            </div>
             <div class="flex items-center mt-2">
               <div class="w-4 h-2.5 bg-black"></div>
-              <p class="block ml-2 text-[11px] text-white font-thin tracking-wide">
+              <p
+                class="block ml-2 text-[11px] text-white font-thin tracking-wide"
+              >
                 Progres yang belum dikerjakan
               </p>
             </div>
           </div>
         </div>
 
+        <!-- PROGRES AKTIVITAS  -->
         <div class="text-white">
           <h1 class="font-semibold text-base">Progres Aktivitas Anda</h1>
           <p class="font-thin text-xs tracking-wide mt-1">
@@ -156,7 +163,9 @@
           </p>
         </div>
       </div>
-      <div class="bg-[#00ABA2] py-5 px-4 rounded-lg mt-7 bg-opacity-70">
+
+      <!-- AKTIVITAS BELAJAR -->
+      <div class="bg-[#00ABA2] py-5 px-5 rounded-lg mt-7 bg-opacity-70">
         <h1 class="text-black font-bold text-base">Aktivitas Belajar</h1>
         <div class="">
           <div class="mb-2 bg-[#F1F1E6] rounded-md">
@@ -207,7 +216,7 @@
     </section>
 
     <!-- COPYRIGHT -->
-    <footer class="block inset-x-0 bottom-0">
+    <footer class="block inset-x-0 bottom-0 mb-5">
       <div class="mx-5">
         <h3 class="text-black opacity-95 font-thin text-[10px]">
           © SMA Tanjung Priok, 2024. All Right Reserved

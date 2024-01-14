@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <title>E-Learning Student Dashboard</title>
     <link rel="icon" href="../../assets/logo.png" type="image/png" />
-    <!-- <link href="/public/css/output.css" rel="stylesheet" /> -->
-    <link href="../../css/index.css" rel="stylesheet" />
+    <link href="/public/css/output.css" rel="stylesheet" />
+    <!-- <link href="../../css/index.css" rel="stylesheet" /> -->
 
     <!-- PENTING!!!! -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   </head>
   <body class="bg-biru-muda font-learn">
+    
     <!-- NAVBAR -->
-    <nav class="sticky bg-biru-tua py-3 top-0 w-full z-10 mb-7">
+    <nav
+      class="sticky bg-biru-tua py-3 lg:py-3.5 top-0 w-full z-10 mb-7 xl:mb-10"
+    >
+      <!-- TAMPILAN HP -->
       <div class="md:hidden relative">
         <div class="ml-5 flex items-center">
           <img src="../../assets/logo.png" class="w-10 my-auto" />
@@ -38,7 +42,6 @@
             </svg>
           </div>
         </div>
-        
         <!-- Navigasi Hamburger -->
         <div
           class="hidden md:flex flex-col items-start absolute mt-3 right-0 bg-[#02455C] p-4 w-48 rounded-l-md rounded-t-none opacity-95 h-screen"
@@ -46,32 +49,71 @@
         >
           <a
             href="#"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
+            class="text-white py-2.5 block text-center text-sm hover:text-oren font-bold underline underline-offset-8 decoration-2 decoration-oren"
             >Dashboard</a
           >
           <a
             href="#"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
+            class="text-white py-2.5 block text-center text-sm hover:text-oren"
             >My Courses</a
           >
           <a
             href="#"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
+            class="text-white py-2.5 block text-center text-sm hover:text-oren"
             >My Profile</a
           >
           <a
             href="#"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
+            class="text-white py-2.5 block text-center text-sm hover:text-oren"
             >Tutorial</a
           >
           <a
             href="../login/siswa.html"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
+            class="text-white py-2.5 block text-center text-sm hover:text-oren"
             >Logout</a
           >
           <!-- Tambahkan navigasi lainnya sesuai kebutuhan -->
         </div>
       </div>
+
+      <!-- TAMPILAN TABLET DAN KOMPUTER -->
+      <div class="hidden mx-5 lg:mx-10 xl:mx-20 md:grid grid-cols-2">
+        <div class="flex">
+          <img
+            src="../../assets/logo.png"
+            class="md:w-[40px] md:h-[40px] lg:w-[48px] lg:h-[47px]"
+          />
+          <h1
+            class="block my-auto ml-3 font-medium tracking-wide lg:tracking-normal text-white text-[14px] lg:text-base"
+          >
+            E-Learning SMA Tanjung Priok Jakarta
+          </h1>
+        </div>
+        <div
+          class="justify-evenly flex my-auto text-white font-medium text-[13.5px] lg:text-[14.5px] xl:text-[15.5px] lg:tracking-normal xl:tracking-normal"
+        >
+          <a href="#">
+            <p
+              class="hover:text-oren font-bold underline underline-offset-8 decoration-2 decoration-oren"
+            >
+              Dashboard
+            </p>
+          </a>
+          <a href="#">
+            <p class="hover:text-oren">My Courses</p>
+          </a>
+          <a href="#">
+            <p class="hover:text-oren">My Profile</p>
+          </a>
+          <a href="#">
+            <p class="hover:text-oren">Tutorial</p>
+          </a>
+          <a href="../login/siswa.html">
+            <p class="hover:text-oren">Logout</p>
+          </a>
+        </div>
+      </div>
+
       <script>
         document
           .getElementById("toggleButton")
@@ -85,19 +127,28 @@
     </nav>
 
     <!-- SELAMAT DATANG -->
-    <div class="mx-5">
-      <h1 class="font-bold text-lg">Selamat Datang Syahira</h1>
-      <p class="font-medium text-[14px] mt-2">
+    <div class="mx-5 lg:mx-10 xl:mx-20">
+      <h1 class="font-bold text-lg lg:text-xl xl:text-2xl">
+        Selamat Datang Syahira
+      </h1>
+      <p
+        class="font-medium text-[14px] md:text-[15px] lg:text-base xl:text-lg mt-2 xl:mt-3"
+      >
         Selamat belajar, dunia menanti kecerdasanmu!
       </p>
     </div>
 
     <!-- CONTENT -->
-    <section class="mx-5 mt-8 mb-10">
-      <div class="bg-[#244868] py-5 px-5 rounded-lg relative bg-opacity-95">
+    <section
+      class="mx-5 xl:mx-20 lg:mx-10 mt-8 xl:mt-10 mb-10 md:grid md:grid-cols-2 md:gap-5 lg:gap-8 xl:gap-20"
+    >
+      <!-- PROGRES AKTIVITAS -->
+      <div
+        class="bg-[#244868] py-5 px-5 lg:px-6 xl:py-8 xl:px-8 rounded-lg relative bg-opacity-95"
+      >
         <div class="flex items-center">
           <!-- PROGRES BAR -->
-          <div class="flex items-left justify-left mb-5">
+          <div class="flex items-left justify-left mb-5 xl:ml-5 xl:mt-4">
             <svg class="w-40 h-40">
               <g transform="scale(4)">
                 <circle
@@ -134,11 +185,11 @@
           </div>
 
           <!-- KETERANGAN -->
-          <div class="block ml-5">
+          <div class="block ml-5 sm:ml-8 md:ml-5 lg:ml-8 xl:ml-16">
             <div class="flex items-center -mt-10">
               <div class="w-4 h-2.5 bg-oren"></div>
               <p
-                class="block ml-2 text-[11px] text-white font-thin tracking-wide"
+                class="block ml-2 text-[11px] lg:text-[12px] xl:text-[13px] xl:font-normal text-white font-thin tracking-wide"
               >
                 Progres yang sudah dikerjakan
               </p>
@@ -146,7 +197,7 @@
             <div class="flex items-center mt-2">
               <div class="w-4 h-2.5 bg-black"></div>
               <p
-                class="block ml-2 text-[11px] text-white font-thin tracking-wide"
+                class="block ml-2 text-[11px] lg:text-[12px] xl:text-[13px] xl:font-normal text-white font-thin tracking-wide"
               >
                 Progres yang belum dikerjakan
               </p>
@@ -154,10 +205,16 @@
           </div>
         </div>
 
-        <!-- PROGRES AKTIVITAS  -->
+        <!-- PROGRES AKTIVITAS ANDA -->
         <div class="text-white">
-          <h1 class="font-semibold text-base">Progres Aktivitas Anda</h1>
-          <p class="font-thin text-xs tracking-wide mt-1">
+          <h1
+            class="font-semibold text-base lg:text-[17px] xl:text-[18px] md:mt-1 xl:mt-3"
+          >
+            Progres Aktivitas Anda
+          </h1>
+          <p
+            class="font-thin xl:font-light text-xs sm:text-[13px] lg:text-[13.5px] xl:text-[15px] leading-normal xl:leading-relaxed sm:tracking-wide mt-1 md:mt-1.5 lg:mt-2 xl:mt-2.5"
+          >
             Terdapat beberapa kegiatan menarik yang perlu kamu selesaikan. Ayo,
             jangan tunggu lebih lama lagi, selesaikan aktivitasnya sekarang!
           </p>
@@ -165,34 +222,70 @@
       </div>
 
       <!-- AKTIVITAS BELAJAR -->
-      <div class="bg-[#00ABA2] py-5 px-5 rounded-lg mt-7 bg-opacity-70">
-        <h1 class="text-black font-bold text-base">Aktivitas Belajar</h1>
+      <div
+        class="bg-[#00ABA2] py-5 px-5 lg:px-6 xl:py-7 xl:px-7 rounded-lg mt-7 md:mt-0 bg-opacity-75"
+      >
+        <h1
+          class="text-black font-bold text-base lg:text-[17px] xl:text-[18px]"
+        >
+          Aktivitas Belajar
+        </h1>
         <div class="">
-          <div class="mb-2 bg-[#F1F1E6] rounded-md">
+          <div
+            class="mb-2 bg-[#F1F1E6] rounded-md transition ease-in-out hover:-translate-y-1 duration-300 hover:shadow-lg"
+          >
             <a href="#">
-              <div class="text-black mt-4 py-3 px-3">
-                <h2 class="font-semibold text-[13px]">Tugas Termodinamika</h2>
-                <p class="font-normal text-xs mt-1.5">Fisika X IPA 3</p>
+              <div
+                class="text-black mt-4 xl:mt-5 py-3 px-3 xl:px-5 lg:py-3.5 xl:py-4"
+              >
+                <h2
+                  class="font-semibold text-[13px] md:text-[14px] lg:text-[14.5px] xl:text-[15px]"
+                >
+                  Tugas Termodinamika
+                </h2>
+                <p
+                  class="font-normal text-xs md:text-[13px] lg:text-[13.5px] xl:text-[14px] mt-1.5 sm:mt-2"
+                >
+                  Fisika X IPA 3
+                </p>
               </div>
             </a>
           </div>
-          <div class="mb-2 bg-[#F1F1E6] rounded-md">
+          <div
+            class="mb-2 bg-[#F1F1E6] rounded-md transition ease-in-out hover:-translate-y-1 duration-300 hover:shadow-lg"
+          >
             <a href="#">
-              <div class="text-black mt-3 py-3 px-3">
-                <h2 class="font-semibold text-[13px]">
+              <div class="text-black mt-3 xl:mt-4 py-3 xl:px-5 px-3 xl:py-4">
+                <h2
+                  class="font-semibold text-[13px] md:text-[14px] lg:text-[14.5px] xl:text-[15px]"
+                >
                   Ujian Integral Trigonometri
                 </h2>
-                <p class="font-normal text-xs mt-1.5">Fisika X IPA 3</p>
+                <p
+                  class="font-normal text-xs mt-1.5 md:text-[13px] xl:text-[14px] sm:mt-2 lg:text-[13.5px]"
+                >
+                  Fisika X IPA 3
+                </p>
               </div>
             </a>
           </div>
-          <div class="mb-2 bg-[#F1F1E6] rounded-md">
+          <div
+            class="mb-2 bg-[#F1F1E6] rounded-md transition ease-in-out hover:-translate-y-1 duration-300 hover:shadow-lg"
+          >
             <a href="#">
-              <div class="text-black mt-3 py-3 px-3">
-                <h2 class="font-semibold text-[13px]">
+              <div
+                class="text-black mt-3 xl:mt-4 py-3 px-3 xl:px-5 lg:py-3.5 xl:py-4"
+              >
+                <h2
+                  class="font-semibold text-[13px] md:text-[14px] lg:text-[14.5px] xl:text-[15px]"
+                >
                   Materi Limit Tak Hingga
                 </h2>
-                <p class="font-normal text-xs mt-1.5">Fisika X IPA 3</p>
+                <p
+                  class="font-normal text-xs mt-1.5 md:text-[13px] sm:mt-2 lg:text-[13.5px] xl:text-[14px]"
+                >
+                  Fisika X IPA 3
+                </p>
               </div>
             </a>
           </div>
@@ -217,11 +310,13 @@
 
     <!-- COPYRIGHT -->
     <footer class="block inset-x-0 bottom-0 mb-5">
-      <div class="mx-5">
-        <h3 class="text-black opacity-95 font-thin text-[10px]">
+      <div class="mx-5 lg:mx-10 xl:mx-20">
+        <h3 class="text-black opacity-95 font-thin text-[10px] lg:text-[12px]">
           © SMA Tanjung Priok, 2024. All Right Reserved
         </h3>
-        <h3 class="text-black opacity-95 font-thin text-[10px]">
+        <h3
+          class="text-black opacity-95 font-thin text-[10px] lg:text-[12px] lg:mt-1"
+        >
           Hand-crafted and Made with ❤️ by Team Capstone UNDIP
         </h3>
       </div>

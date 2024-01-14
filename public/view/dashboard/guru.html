@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E-Learning Student Dashboard</title>
+    <link rel="icon" href="../../assets/logo.png" type="image/png" />
+    <!-- <link href="/public/css/output.css" rel="stylesheet" /> -->
+    <link href="../../css/index.css" rel="stylesheet" />
+
+    <!-- PENTING!!!! -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+  <body class="bg-biru-muda font-learn">
+    <!-- NAVBAR -->
+    <nav class="sticky bg-biru-tua py-3 top-0 w-full z-10 mb-7">
+      <div class="md:hidden relative">
+        <div class="ml-5 flex items-center">
+          <img src="../../assets/logo.png" class="w-10 my-auto" />
+          <h1
+            class="font-medium text-sm text-white block my-auto ml-2 tracking-normal"
+          >
+            E-Learning SMA Tanjung Priok
+          </h1>
+          <!-- button hamburger -->
+          <div
+            class="w-9 h-8 bg-[#F1F1E6] rounded-md flex ml-auto mr-5 mt-1 cursor-pointer"
+            id="toggleButton"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 my-auto mx-auto"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#02455C"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </div>
+        </div>
+        
+        <!-- Navigasi Hamburger -->
+        <div
+          class="hidden md:flex flex-col items-start absolute mt-3 right-0 bg-[#02455C] p-4 w-48 rounded-l-md rounded-t-none opacity-95 h-screen"
+          id="mobileMenu"
+        >
+          <a
+            href="#"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
+            >Dashboard</a
+          >
+          <a
+            href="#"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
+            >My Courses</a
+          >
+          <a
+            href="#"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
+            >My Profile</a
+          >
+          <a
+            href="#"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
+            >Tutorial</a
+          >
+          <a
+            href="../login/siswa.html"
+            class="text-white py-2 block text-center text-sm hover:text-oren"
+            >Logout</a
+          >
+          <!-- Tambahkan navigasi lainnya sesuai kebutuhan -->
+        </div>
+      </div>
+      <script>
+        document
+          .getElementById("toggleButton")
+          .addEventListener("click", function () {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+            document
+              .getElementById("mobileMenu")
+              .classList.toggle("animate-slide-right"); // Tambahkan kelas animasi
+          });
+      </script>
+    </nav>
+
+    <!-- SELAMAT DATANG -->
+    <div class="mx-5">
+      <h1 class="font-bold text-lg">Selamat Datang Syahira</h1>
+      <p class="font-medium text-[14px] mt-2">
+        Selamat belajar, dunia menanti kecerdasanmu!
+      </p>
+    </div>
+
+    <!-- CONTENT -->
+    
+
+    <!-- COPYRIGHT -->
+    <footer class="block inset-x-0 bottom-0 mb-5">
+      <div class="mx-5">
+        <h3 class="text-black opacity-95 font-thin text-[10px]">
+          © SMA Tanjung Priok, 2024. All Right Reserved
+        </h3>
+        <h3 class="text-black opacity-95 font-thin text-[10px]">
+          Hand-crafted and Made with ❤️ by Team Capstone UNDIP
+        </h3>
+      </div>
+    </footer>
+  </body>
+</html>

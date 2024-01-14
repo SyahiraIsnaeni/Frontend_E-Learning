@@ -12,7 +12,10 @@
   </head>
   <body class="bg-biru-muda font-learn">
     <!-- NAVBAR -->
-    <nav class="sticky bg-biru-tua py-3 top-0 w-full z-10 mb-7">
+    <nav
+      class="sticky bg-biru-tua py-3 lg:py-3.5 top-0 w-full z-10 mb-7 xl:mb-10"
+    >
+      <!-- TAMPILAN HP -->
       <div class="md:hidden relative">
         <div class="ml-5 flex items-center">
           <img src="../../assets/logo.png" class="w-10 my-auto" />
@@ -38,7 +41,6 @@
             </svg>
           </div>
         </div>
-        
         <!-- Navigasi Hamburger -->
         <div
           class="hidden md:flex flex-col items-start absolute mt-3 right-0 bg-[#02455C] p-4 w-48 rounded-l-md rounded-t-none opacity-95 h-screen"
@@ -46,32 +48,63 @@
         >
           <a
             href="#"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
+            class="text-white py-2.5 block text-center text-sm hover:text-oren font-bold underline underline-offset-8 decoration-2 decoration-oren"
             >Dashboard</a
           >
           <a
             href="#"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
-            >My Courses</a
-          >
-          <a
-            href="#"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
+            class="text-white py-2.5 block text-center text-sm hover:text-oren"
             >My Profile</a
           >
           <a
             href="#"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
+            class="text-white py-2.5 block text-center text-sm hover:text-oren"
             >Tutorial</a
           >
           <a
             href="../login/siswa.html"
-            class="text-white py-2 block text-center text-sm hover:text-oren"
+            class="text-white py-2.5 block text-center text-sm hover:text-oren"
             >Logout</a
           >
           <!-- Tambahkan navigasi lainnya sesuai kebutuhan -->
         </div>
       </div>
+
+      <!-- TAMPILAN TABLET DAN KOMPUTER -->
+      <div class="hidden mx-5 lg:mx-10 xl:mx-20 md:grid grid-cols-2">
+        <div class="flex">
+          <img
+            src="../../assets/logo.png"
+            class="md:w-[40px] md:h-[40px] lg:w-[48px] lg:h-[47px]"
+          />
+          <h1
+            class="block my-auto ml-3 font-medium tracking-wide lg:tracking-normal text-white text-[14px] lg:text-base"
+          >
+            E-Learning SMA Tanjung Priok Jakarta
+          </h1>
+        </div>
+        <div
+          class="justify-evenly flex my-auto text-white font-medium text-[13.5px] lg:text-[14.5px] xl:text-[15.5px] lg:tracking-normal xl:tracking-normal"
+        >
+          <a href="#">
+            <p
+              class="hover:text-oren font-bold underline underline-offset-8 decoration-2 decoration-oren"
+            >
+              Dashboard
+            </p>
+          </a>
+          <a href="#">
+            <p class="hover:text-oren">My Profile</p>
+          </a>
+          <a href="#">
+            <p class="hover:text-oren">Tutorial</p>
+          </a>
+          <a href="../login/siswa.html">
+            <p class="hover:text-oren">Logout</p>
+          </a>
+        </div>
+      </div>
+
       <script>
         document
           .getElementById("toggleButton")
@@ -85,23 +118,118 @@
     </nav>
 
     <!-- SELAMAT DATANG -->
-    <div class="mx-5">
-      <h1 class="font-bold text-lg">Selamat Datang Syahira</h1>
-      <p class="font-medium text-[14px] mt-2">
-        Selamat belajar, dunia menanti kecerdasanmu!
+    <div class="mx-5 lg:mx-10 xl:mx-20">
+      <h1 class="font-bold text-lg lg:text-xl xl:text-2xl">
+        Selamat Datang Syahira
+      </h1>
+      <p
+        class="font-medium leading-relaxed text-[14px] md:text-[15px] lg:text-base xl:text-lg mt-2 xl:mt-3"
+      >
+        Mari bersama-sama membentuk masa depan cemerlang untuk siswa-siswa kita!
       </p>
     </div>
 
-    <!-- CONTENT -->
-    
+    <!-- COURSES -->
+    <section class="font-learn text-black mt-7 mb-10">
+      <div class="mx-5 lg:mx-10 xl:mx-20">
+        <h1 class="font-semibold text-normal">My Courses</h1>
+        <div class="mt-4">
+          <div>
+            <div class="rounded-md border border-black border-opacity-30">
+              <div
+                class="bg-[#EEE8A9] border border-b-black border-opacity-20 rounded-t-md w-full h-[140px]"
+              ></div>
+              <div class="mx-3.5 py-3.5">
+                <h1 class="text-sm font-medium">Matematika Wajib</h1>
+                <p class="mt-1.5 text-[13px]">XI IPS 2</p>
+              </div>
+            </div>
+
+            <div class="rounded-md border border-black border-opacity-30 mt-4">
+              <div
+                class="bg-[#8E7258] border border-b-black border-opacity-20 rounded-t-md w-full h-[140px]"
+              ></div>
+              <div class="mx-3.5 py-3.5">
+                <h1 class="text-sm font-medium">Matematika Minat</h1>
+                <p class="mt-1.5 text-[13px]">XI IPA 4</p>
+              </div>
+            </div>
+
+            <div class="rounded-md border border-black border-opacity-30 mt-4">
+              <div
+                class="bg-[#EE982B] border border-b-black border-opacity-20 rounded-t-md w-full h-[140px]"
+              ></div>
+              <div class="mx-3.5 py-3.5">
+                <h1 class="text-sm font-medium">Sosiologi</h1>
+                <p class="mt-1.5 text-[13px]">XII IPS 1</p>
+              </div>
+            </div>
+
+            <div class="rounded-md border border-black border-opacity-30 mt-4">
+              <div
+                class="bg-[#00A791] border border-b-black border-opacity-20 rounded-t-md w-full h-[140px]"
+              ></div>
+              <div class="mx-3.5 py-3.5">
+                <h1 class="text-sm font-medium">Sejarah Minat</h1>
+                <p class="mt-1.5 text-[13px]">XI IPS 4</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="rounded-md border border-black border-opacity-30">
+              <div
+                class="bg-[#EEE8A9] border border-b-black border-opacity-20 rounded-t-md w-full h-[140px]"
+              ></div>
+              <div class="mx-3.5 py-3.5">
+                <h1 class="text-sm font-medium">Matematika Wajib</h1>
+                <p class="mt-1.5 text-[13px]">XI IPS 2</p>
+              </div>
+            </div>
+
+            <div class="rounded-md border border-black border-opacity-30 mt-4">
+              <div
+                class="bg-[#8E7258] border border-b-black border-opacity-20 rounded-t-md w-full h-[140px]"
+              ></div>
+              <div class="mx-3.5 py-3.5">
+                <h1 class="text-sm font-medium">Matematika Minat</h1>
+                <p class="mt-1.5 text-[13px]">XI IPA 4</p>
+              </div>
+            </div>
+
+            <div class="rounded-md border border-black border-opacity-30 mt-4">
+              <div
+                class="bg-[#EE982B] border border-b-black border-opacity-20 rounded-t-md w-full h-[140px]"
+              ></div>
+              <div class="mx-3.5 py-3.5">
+                <h1 class="text-sm font-medium">Sosiologi</h1>
+                <p class="mt-1.5 text-[13px]">XII IPS 1</p>
+              </div>
+            </div>
+
+            <div class="rounded-md border border-black border-opacity-30 mt-4">
+              <div
+                class="bg-[#00A791] border border-b-black border-opacity-20 rounded-t-md w-full h-[140px]"
+              ></div>
+              <div class="mx-3.5 py-3.5">
+                <h1 class="text-sm font-medium">Sejarah Minat</h1>
+                <p class="mt-1.5 text-[13px]">XI IPS 4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- COPYRIGHT -->
     <footer class="block inset-x-0 bottom-0 mb-5">
-      <div class="mx-5">
-        <h3 class="text-black opacity-95 font-thin text-[10px]">
+      <div class="mx-5 lg:mx-10 xl:mx-20">
+        <h3 class="text-black opacity-95 font-thin text-[10px] lg:text-[12px]">
           © SMA Tanjung Priok, 2024. All Right Reserved
         </h3>
-        <h3 class="text-black opacity-95 font-thin text-[10px]">
+        <h3
+          class="text-black opacity-95 font-thin text-[10px] lg:text-[12px] lg:mt-1"
+        >
           Hand-crafted and Made with ❤️ by Team Capstone UNDIP
         </h3>
       </div>

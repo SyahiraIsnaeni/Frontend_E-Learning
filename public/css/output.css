@@ -1409,6 +1409,14 @@ video {
   margin-left: 0.125rem;
 }
 
+.placeholder\:ml-1::-moz-placeholder{
+  margin-left: 0.25rem;
+}
+
+.placeholder\:ml-1::placeholder{
+  margin-left: 0.25rem;
+}
+
 .hover\:-translate-y-1:hover{
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));

@@ -18,12 +18,15 @@
 
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/trix@2.0.8/dist/trix.css"
+      href="../../../editor/richtexteditor/rte_theme_default.css"
     />
     <script
       type="text/javascript"
-      src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"
+      src="../../../editor/richtexteditor/rte.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../editor/richtexteditor/plugins/all_plugins.js"
     ></script>
   </head>
   <body class="bg-biru-muda font-learn">
@@ -137,23 +140,29 @@
             Tambah Materi Matematika Wajib
           </h1>
           <h1
-            class="font-semibold text-[15px] lg:text-base xl:text-lg mt-1.5 lg:mt-2.5 xl:mt-3"
+            class="font-semibold text-[15px] lg:text-[17px] xl:text-lg mt-1.5 lg:mt-2.5 xl:mt-3"
           >
             XI IPS 2
           </h1>
         </div>
-        <a href="#" class="hidden sm:block ml-auto">
-          <div class="bg-[#EE982B] py-2 px-3 rounded-md flex">
+        <a href="../list-materi/guru.html" class="hidden sm:block ml-auto">
+          <div
+            class="bg-[#EE982B] py-2 px-3 lg:py-2 xl:py-2.5 lg:px-4 xl:px-6 rounded-md flex transition ease-in-out hover:scale-105 duration-300"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              class="w-3.5 h-3.5 mt-0.5"
+              class="w-3.5 h-3.5 mt-0.5 lg:mt-[3px] lg:h-[14px] lg:w-[14px] xl:h-[16px] xl:w-[16px]"
             >
               <path
                 d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
               />
             </svg>
-            <p class="text-[13px] font-semibold ml-0.5">Kembali</p>
+            <p
+              class="text-[13px] font-semibold ml-0.5 xl:ml-1 lg:text-[13.5px] xl:text-[15px]"
+            >
+              Kembali
+            </p>
           </div>
         </a>
       </div>
@@ -163,53 +172,78 @@
     <section class="text-black mt-8 xl:mt-12 mb-10">
       <div class="mx-5 sm:mx-8 lg:mx-10 xl:mx-20">
         <form action="" method="post" enctype="multipart/form-data">
-          <label for="judul">
-            <p class="text-sm lg:text-base xl:text-lg font-[400] mt-3 xl:mt-4">
-              Judul Materi
-            </p>
-            <input
-              class="mt-1.5 xl:mt-2 px-3 py-2 xl:py-3 mr-4 border-2 rounded-md w-full block text-[12.5px] lg:text-sm xl:text-base"
-              type="text"
-              id="judul"
-              name="judul"
-              placeholder="Masukkan Judul Materi"
-            />
-          </label>
-
-          <label for="deskripsi">
-            <p class="text-sm lg:text-base xl:text-lg font-normal mt-3 xl:mt-4">
-              Deskripsi
-            </p>
-            <div
-              class="mt-1.5 xl:mt-2 bg-white px-1 py-2 border rounded-md text-[12.5px] lg:text-sm xl:text-base w-full"
-            >
-              <input id="x" type="hidden" name="content" />
-              <trix-editor input="x"></trix-editor>
+          <label for="judul" class="lg:flex">
+            <div class="lg:w-1/4">
+              <p
+                class="text-sm lg:text-[15px] xl:text-base mt-3 xl:mt-4 font-medium"
+              >
+                Judul Materi
+              </p>
+            </div>
+            <div class="lg:w-3/4">
+              <input
+                class="mt-1.5 xl:mt-2 px-3 py-2 xl:py-3 mr-4 border-2 rounded-md w-full block text-[12.5px] lg:text-sm xl:text-[15px] lg:placeholder:text-[13.5px] xl:placeholder:text-sm"
+                type="text"
+                id="judul"
+                name="judul"
+                placeholder="Masukkan Judul Materi"
+              />
             </div>
           </label>
 
-          <label for="gambar">
-            <p class="text-sm lg:text-base xl:text-lg font-normal mt-3 xl:mt-4">
-              Gambar (opsional)
-            </p>
-            <input
-              class="text-[12.5px] mt-1.5"
-              type="file"
-              id="gambar"
-              name="gambar"
-              accept="image/*"
-            />
+          <label for="deskripsi" class="lg:flex mt-3">
+            <div class="lg:w-1/4">
+              <p
+                class="text-sm lg:text-[15px] xl:text-base font-medium mt-3 xl:mt-4"
+              >
+                Deskripsi
+              </p>
+            </div>
+            <div class="lg:w-3/4 overflow-scroll">
+              <div id="div_editor1" class="mt-1.5">
+                <p>Isi konten materi</p>
+              </div>
+              <script type="text/javascript">
+                var editor1 = new RichTextEditor("#div_editor1");
+              </script>
+            </div>
           </label>
 
-          <div>
-            <h1 class="block text-sm lg:text-base xl:text-lg font-normal mt-3 xl:mt-4 mb-1">
+          <label for="gambar" class="lg:flex mt-5">
+            <div class="lg:w-1/4">
+              <p
+                class="text-sm lg:text-[15px] xl:text-base font-medium mt-3 lg:mt-0"
+              >
+                Gambar (opsional)
+              </p>
+            </div>
+            <div class="lg:w-3/4">
+              <input
+                class="text-[12.5px] mt-1.5 lg:mt-0"
+                type="file"
+                id="gambar"
+                name="gambar"
+                accept="image/*"
+              />
+            </div>
+          </label>
+
+          <div class="lg:flex mt-5">
+            <div class="lg:w-1/4">
+              <h1
+                class="block text-sm lg:text-[15px] xl:text-base font-medium mt-3 lg:mt-0.5 mb-1 lg:mb-0"
+              >
                 Dokumen (opsional)
-            </h1>
-            
-            <label for="dokumen" class="text-[12.5px] cursor-pointer text-black bg-gray-100  px-1 py-0.5 rounded-sm border-black border-[0.5px]">
+              </h1>
+            </div>
+            <div class="lg:w-3/4">
+              <label
+                for="dokumen"
+                class="text-[12.5px] cursor-pointer text-black bg-gray-100 px-1 py-0.5 rounded-sm border-black border-[0.5px]"
+              >
                 Choose Files
-            </label>
-            <input
+              </label>
+              <input
                 class="hidden"
                 type="file"
                 id="dokumen"
@@ -217,32 +251,41 @@
                 accept=".pdf, .docx, .doc, .odt, .xls, .xlsx"
                 multiple
                 onchange="updateSelectedFiles(this)"
-            />
-            
-            <!-- Display selected files -->
-            <div id="selected-files" class="text-sm text-gray-700 mt-1"></div>
-            
-            <!-- Display file count info -->
-            <span id="file-count-info" class="text-sm text-gray-500 mt-1"></span>
-            
-            <script>
+              />
+
+              <!-- Display selected files -->
+              <div id="selected-files" class="text-sm text-gray-700 mt-1"></div>
+
+              <!-- Display file count info -->
+              <span
+                id="file-count-info"
+                class="text-sm text-gray-500 mt-1"
+              ></span>
+
+              <script>
                 var fileCounter = 0;
-            
+
                 function updateSelectedFiles(input) {
-                    var selectedFiles = input.files;
-                    var filesText = "";
-            
-                    for (var i = 0; i < selectedFiles.length; i++) {
-                        fileCounter++;
-                        filesText += fileCounter + ". " + selectedFiles[i].name + "\n";
-                    }
-            
-                    document.getElementById('selected-files').innerText += filesText.trim() + "\n";
+                  var selectedFiles = input.files;
+                  var filesText = "";
+
+                  for (var i = 0; i < selectedFiles.length; i++) {
+                    fileCounter++;
+                    filesText +=
+                      fileCounter + ". " + selectedFiles[i].name + "\n";
+                  }
+
+                  document.getElementById("selected-files").innerText +=
+                    filesText.trim() + "\n";
                 }
-            </script>
-            
+              </script>
+            </div>
           </div>
-          <button type="submit" class="mt-5 bg-[#02455C] text-white font-medium text-sm px-4 py-1.5 rounded-md">
+
+          <button
+            type="submit"
+            class="mt-5 lg:mt-8 bg-[#02455C] block ml-auto text-white font-medium text-sm lg:text-[15px] xl:text-base px-4 lg:px-10 lg:py-2 xl:px-12 py-1.5 xl:py-2.5 rounded-md ease-in-out hover:scale-105 duration-300"
+          >
             Simpan
           </button>
         </form>

@@ -7,6 +7,7 @@
     "build:css": "npx tailwindcss -i ./src/input.css -o ./public/css/index.css"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-decoupled-document": "^41.0.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.33"
   }

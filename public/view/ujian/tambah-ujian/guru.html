@@ -32,7 +32,7 @@
   <body class="bg-biru-muda font-learn">
     <!-- NAVBAR -->
     <nav
-      class="sticky bg-biru-tua py-3 lg:py-3.5 top-0 w-full z-10 mb-7 xl:mb-10"
+      class="sticky bg-biru-tua py-3 lg:py-3.5 top-0 w-full z-30 mb-7 xl:mb-10"
     >
       <!-- TAMPILAN HP -->
       <div class="md:hidden relative">
@@ -168,21 +168,21 @@
       </div>
     </section>
 
-    <!-- FORM TAMBAH MATERI -->
+    <!-- FORM TAMBAH UJIAN -->
     <section class="text-black mt-8 xl:mt-12 mb-10">
       <div class="mx-5 sm:mx-8 lg:mx-10 xl:mx-20">
         <form action="" method="post" enctype="multipart/form-data">
           <label for="judul" class="lg:flex">
             <div class="lg:w-1/4">
               <p
-                class="text-sm lg:text-[15px] xl:text-base mt-3 xl:mt-4 font-medium"
+                class="text-[13.5px] lg:text-[15px] xl:text-base mt-3 xl:mt-4 font-medium"
               >
                 Judul Ujian
               </p>
             </div>
             <div class="lg:w-3/4">
               <input
-                class="mt-1.5 xl:mt-2 px-3 py-2 xl:py-3 mr-4 border-2 rounded-md w-full block text-[12.5px] lg:text-sm xl:text-[15px] lg:placeholder:text-[13.5px] xl:placeholder:text-sm"
+                class="mt-1.5 xl:mt-2 px-3 py-2 xl:py-3 mr-4 border-2 rounded-md w-full block text-[12.5px] lg:text-sm xl:text-[15px] lg:placeholder:text-[12.5px] xl:placeholder:text-sm"
                 type="text"
                 id="judul"
                 name="judul"
@@ -194,7 +194,7 @@
           <label for="deskripsi" class="lg:flex mt-5">
             <div class="lg:w-1/4">
               <p
-                class="text-sm lg:text-[15px] xl:text-base font-medium mt-3 xl:mt-4"
+                class="text-[13.5px] lg:text-[15px] xl:text-base font-medium mt-3 xl:mt-4"
               >
                 Petunjuk Ujian
               </p>
@@ -210,7 +210,7 @@
           <label for="tanggal" class="lg:flex mt-5">
             <div class="lg:w-1/4">
               <p
-                class="text-sm lg:text-[15px] xl:text-base font-medium mt-3 xl:mt-4"
+                class="text-[13.5px] lg:text-[15px] xl:text-base font-medium mt-4 xl:mt-4"
               >
                 Tenggat/Deadline
               </p>
@@ -229,7 +229,7 @@
           <label for="durasi" class="lg:flex mt-5">
             <div class="lg:w-1/4">
               <p
-                class="text-sm lg:text-[15px] xl:text-base font-medium mt-3 xl:mt-4"
+                class="text-[13.5px] lg:text-[15px] xl:text-base font-medium mt-3 xl:mt-4"
               >
                 Durasi Ujian
               </p>
@@ -264,6 +264,263 @@
                 console.log("Durasi Ujian: " + durasiFormat);
               });
             </script>
+          </label>
+
+          <label for="soal" class="mt-5">
+            <p
+              class="text-[13.5px] lg:text-[15px] xl:text-base font-medium mt-3 xl:mt-4"
+            >
+              Soal Ujian
+            </p>
+            <div
+              class="bg-white rounded-md w-full border shadow mt-1.5 py-4 px-3 relative"
+            >
+              <div class="bg-[#E6F4F1] rounded-md py-3 px-3 border-2">
+                <div class="flex">
+                  <div class="w-5/6">
+                    <p class="text-[13px] lg:text-sm xl:text-[15px] font-bold mt-1.5">Soal 1</p>
+                  </div>
+                  <div class="w-1/6 relative">
+                    <button
+                      type="button"
+                      class="absolute -mr-2 right-0 focus:outline-none w-8 h-8 hover:bg-gray-300 hover:rounded-full flex items-center justify-center"
+                      onclick="showOptions(event)"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="16"
+                        width="4"
+                        viewBox="0 0 128 512"
+                      >
+                        <path
+                          d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                        />
+                      </svg>
+                    </button>
+                    <ul
+                      id="optionsList"
+                      class="hidden text-xs py-3 z-10 bg-white absolute right-0 top-0 border border-black border-opacity-25 mt-8 p-2 rounded-md shadow-md"
+                    >
+                      <a href="#">
+                        <li class="mb-2 px-4 hover:font-bold">Edit</li>
+                      </a>
+                      <a href="#">
+                        <li class="px-4 hover:font-bold">Delete</li>
+                      </a>
+                    </ul>
+                    <script>
+                      function showOptions(event) {
+                        event.stopPropagation(); // Mencegah penyebaran ke event klik elemen parent
+                        const optionsList =
+                          document.getElementById("optionsList");
+                        optionsList.classList.toggle("hidden");
+                      }
+
+                      document
+                        .querySelector(".bg-white-first")
+                        .addEventListener("click", function (e) {
+                          window.location.href = "#"; // Navigasi ke halaman lain jika latar belakang diklik
+                        });
+                    </script>
+                  </div>
+                </div>
+                <div>
+                  <div id="div_editor2" class="mt-4"></div>
+                  <script type="text/javascript">
+                    var editor2 = new RichTextEditor("#div_editor2");
+                  </script>
+                </div>
+                <div class="flex mt-2">
+                  <button
+                    class="bg-[#EE982B] py-2 px-3 lg:px-3.5 lg:py-2.5 xl:px-4 xl:py-3 rounded-md mt-3 block mr-auto transition ease-in-out hover:scale-105 duration-200"
+                  >
+                    <p class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-black">Cancel</p>
+                  </button>
+                  <button
+                    class="bg-green-900 py-2 px-3 lg:px-3.5 lg:py-2.5 xl:px-4 xl:py-3 rounded-md mt-3 block ml-auto transition ease-in-out hover:scale-105 duration-200"
+                  >
+                    <p class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-white">Update Soal</p>
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-[#E6F4F1] rounded-md py-3 px-3 border-2 mt-3">
+                <div class="flex">
+                  <div class="w-5/6">
+                    <p class="text-[13px] lg:text-sm xl:text-[15px] font-bold mt-1.5">Soal 2</p>
+                  </div>
+                  <div class="w-1/6 relative">
+                    <button
+                      type="button"
+                      class="absolute -mr-2 right-0 focus:outline-none w-8 h-8 hover:bg-gray-300 hover:rounded-full flex items-center justify-center"
+                      onclick="showOptions2(event)"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="16"
+                        width="4"
+                        viewBox="0 0 128 512"
+                      >
+                        <path
+                          d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                        />
+                      </svg>
+                    </button>
+                    <ul
+                      id="optionsList2"
+                      class="hidden text-xs py-3 z-10 bg-white absolute right-0 top-0 border border-black border-opacity-25 mt-8 p-2 rounded-md shadow-md"
+                    >
+                      <a href="#">
+                        <li class="mb-2 px-4 hover:font-bold">Edit</li>
+                      </a>
+                      <a href="#">
+                        <li class="px-4 hover:font-bold">Delete</li>
+                      </a>
+                    </ul>
+                    <script>
+                      function showOptions2(event) {
+                        event.stopPropagation(); // Mencegah penyebaran ke event klik elemen parent
+                        const optionsList2 =
+                          document.getElementById("optionsList2");
+                        optionsList2.classList.toggle("hidden");
+                      }
+
+                      document
+                        .querySelector(".bg-white-first")
+                        .addEventListener("click", function (e) {
+                          window.location.href = "#"; // Navigasi ke halaman lain jika latar belakang diklik
+                        });
+                    </script>
+                  </div>
+                </div>
+                <div
+                  class="border-1 w-full rounded-md mt-4"
+                >
+                  <div>
+                    <div id="div_editor3"></div>
+                    <script type="text/javascript">
+                      var editor3 = new RichTextEditor("#div_editor3");
+                    </script>
+                  </div>
+
+                  <div class="lg:grid lg:grid-cols-3 gap-10 text-xs lg:text-[13px] font-medium mt-3">
+                    <div>
+                        <div class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer">
+                            <div class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
+                                <p class="text-center">A</p>
+                            </div>
+                            <div class="px-4 py-2.5 w-5/6">
+                                Jawaban A
+                            </div>
+                        </div>
+                        <div class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer mt-3">
+                            <div class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
+                                <p class="text-center">B</p>
+                            </div>
+                            <div class="px-4 py-2.5 w-5/6">
+                                Jawaban B
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer mt-3 lg:mt-0">
+                            <div class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
+                                <p class="text-center">C</p>
+                            </div>
+                            <div class="px-4 py-2.5 w-5/6">
+                                Jawaban C
+                            </div>
+                        </div>
+                        <div class="rounded-md border-2 bg-white border-[#364954] overflow-hidden flex cursor-pointer mt-3">
+                            <div class="bg-[#364954] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
+                                <p class="text-center text-white">D</p>
+                            </div>
+                            <div class="px-4 py-2.5 w-5/6">
+                                Jawaban D
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer mt-3 lg:mt-0">
+                            <div class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
+                                <p class="text-center">E</p>
+                            </div>
+                            <div class="px-4 py-2.5 w-5/6">
+                                Jawaban E
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex mt-2">
+                  <button
+                    class="bg-[#EE982B] py-2 px-3 lg:px-3.5 lg:py-2.5 xl:px-4 xl:py-3 rounded-md mt-3 block mr-auto transition ease-in-out hover:scale-105 duration-200"
+                  >
+                    <p class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-black">Cancel</p>
+                  </button>
+                  <button
+                    class="bg-green-900 py-2 px-3 lg:px-3.5 lg:py-2.5 xl:px-4 xl:py-3 rounded-md mt-3 block ml-auto transition ease-in-out hover:scale-105 duration-200"
+                  >
+                    <p class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-white">Update Soal</p>
+                  </button>
+                </div>
+              </div>
+
+              <!-- TOMBOL TAMBAH SOAL -->
+              <div class="flex mt-7 pb-20 mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
+                  />
+                </svg>
+                <a href="#" id="tambahSoalBtn">
+                  <p class="text-xs lg:text-[13px] xl:text-[13.5px] underline font-semibold ml-1 hover:font-bold">Tambah Soal</p>
+                </a>
+              </div>
+
+              <!-- Dropdown untuk jenis soal -->
+              <div
+                id="jenisSoalOptions"
+                class="hidden -mt-24 absolute top-full left-0 z-10 ml-3 bg-white border border-gray-300 rounded-md shadow-lg py-1 lg:py-2"
+              >
+                <div
+                  onclick="selectJenisSoal('pilihan_ganda')"
+                  class="cursor-pointer py-2 px-4 text-xs lg:text-[13px] font-medium hover:bg-gray-200"
+                >
+                  Pilihan Ganda
+                </div>
+                <div
+                  onclick="selectJenisSoal('esai')"
+                  class="cursor-pointer py-2 px-4 hover:bg-gray-200 text-xs lg:text-[13px] font-medium"
+                >
+                  Esai
+                </div>
+              </div>
+              <script>
+                function selectJenisSoal(jenis) {
+                  // Lakukan sesuatu dengan jenis soal yang dipilih
+                  console.log("Jenis Soal Terpilih:", jenis);
+                  // Sembunyikan dropdown setelah memilih
+                  document
+                    .getElementById("jenisSoalOptions")
+                    .classList.add("hidden");
+                }
+
+                document
+                  .getElementById("tambahSoalBtn")
+                  .addEventListener("click", function (event) {
+                    event.preventDefault();
+                    // Toggle tampilan dropdown jenis soal
+                    document
+                      .getElementById("jenisSoalOptions")
+                      .classList.toggle("hidden");
+                  });
+              </script>
+            </div>
           </label>
 
           <button

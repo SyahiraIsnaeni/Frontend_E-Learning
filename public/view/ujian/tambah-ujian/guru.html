@@ -275,10 +275,15 @@
             <div
               class="bg-white rounded-md w-full border shadow mt-1.5 py-4 px-3 relative"
             >
+              <!-- SOAL ESSAY -->
               <div class="bg-[#E6F4F1] rounded-md py-3 px-3 border-2">
                 <div class="flex">
                   <div class="w-5/6">
-                    <p class="text-[13px] lg:text-sm xl:text-[15px] font-bold mt-1.5">Soal 1</p>
+                    <p
+                      class="text-[13px] lg:text-sm xl:text-[15px] font-bold mt-1.5"
+                    >
+                      Soal 1
+                    </p>
                   </div>
                   <div class="w-1/6 relative">
                     <button
@@ -299,7 +304,7 @@
                     </button>
                     <ul
                       id="optionsList"
-                      class="hidden text-xs py-3 z-10 bg-white absolute right-0 top-0 border border-black border-opacity-25 mt-8 p-2 rounded-md shadow-md"
+                      class="hidden text-xs lg:text-[12.5px] py-3 z-10 bg-white absolute right-0 top-0 border border-black border-opacity-25 mt-8 p-2 rounded-md shadow-md"
                     >
                       <a href="#">
                         <li class="mb-2 px-4 hover:font-bold">Edit</li>
@@ -330,24 +335,52 @@
                     var editor2 = new RichTextEditor("#div_editor2");
                   </script>
                 </div>
+                <div class="flex mt-4">
+                  <div
+                    class="text-[12.5px] lg:text-[13px] xl:text-sm font-semibold my-auto"
+                  >
+                    <p>Poin Soal</p>
+                  </div>
+                  <div>
+                    <input
+                      class="ml-3 px-2 py-2 text-center lg:px-3 xl:py-2.5 mr-4 border-2 border-black border-opacity-20 rounded-md w-[80px] lg:w-[100px] block text-xs lg:text-[13px] xl:text-sm"
+                      type="number"
+                      id="poin"
+                      name="poin"
+                    />
+                  </div>
+                </div>
                 <div class="flex mt-2">
                   <button
                     class="bg-[#EE982B] py-2 px-3 lg:px-3.5 lg:py-2.5 xl:px-4 xl:py-3 rounded-md mt-3 block mr-auto transition ease-in-out hover:scale-105 duration-200"
                   >
-                    <p class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-black">Cancel</p>
+                    <p
+                      class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-black"
+                    >
+                      Cancel
+                    </p>
                   </button>
                   <button
                     class="bg-green-900 py-2 px-3 lg:px-3.5 lg:py-2.5 xl:px-4 xl:py-3 rounded-md mt-3 block ml-auto transition ease-in-out hover:scale-105 duration-200"
                   >
-                    <p class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-white">Update Soal</p>
+                    <p
+                      class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-white"
+                    >
+                      Update Soal
+                    </p>
                   </button>
                 </div>
               </div>
 
+              <!-- SOAL PG -->
               <div class="bg-[#E6F4F1] rounded-md py-3 px-3 border-2 mt-3">
                 <div class="flex">
                   <div class="w-5/6">
-                    <p class="text-[13px] lg:text-sm xl:text-[15px] font-bold mt-1.5">Soal 2</p>
+                    <p
+                      class="text-[13px] lg:text-sm xl:text-[15px] font-bold mt-1.5"
+                    >
+                      Soal 2
+                    </p>
                   </div>
                   <div class="w-1/6 relative">
                     <button
@@ -368,7 +401,7 @@
                     </button>
                     <ul
                       id="optionsList2"
-                      class="hidden text-xs py-3 z-10 bg-white absolute right-0 top-0 border border-black border-opacity-25 mt-8 p-2 rounded-md shadow-md"
+                      class="hidden text-xs lg:text-[12.5px] py-3 z-10 bg-white absolute right-0 top-0 border border-black border-opacity-25 mt-8 p-2 rounded-md shadow-md"
                     >
                       <a href="#">
                         <li class="mb-2 px-4 hover:font-bold">Edit</li>
@@ -393,9 +426,7 @@
                     </script>
                   </div>
                 </div>
-                <div
-                  class="border-1 w-full rounded-md mt-4"
-                >
+                <div class="border-1 w-full rounded-md mt-4">
                   <div>
                     <div id="div_editor3"></div>
                     <script type="text/javascript">
@@ -403,83 +434,127 @@
                     </script>
                   </div>
 
-                  <div class="lg:grid lg:grid-cols-3 gap-10 text-xs lg:text-[13px] font-medium mt-3">
+                  <div
+                    class="lg:grid lg:grid-cols-3 gap-10 text-xs lg:text-[13px] font-medium mt-3"
+                  >
                     <div>
-                        <div class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer">
-                            <div class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
-                                <p class="text-center">A</p>
-                            </div>
-                            <div class="px-4 py-2.5 w-5/6">
-                                Jawaban A
-                            </div>
+                      <div
+                        class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer"
+                      >
+                        <div
+                          class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20"
+                        >
+                          <p class="text-center">A</p>
                         </div>
-                        <div class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer mt-3">
-                            <div class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
-                                <p class="text-center">B</p>
-                            </div>
-                            <div class="px-4 py-2.5 w-5/6">
-                                Jawaban B
-                            </div>
+                        <div class="px-4 py-2.5 w-5/6">Jawaban A</div>
+                      </div>
+                      <div
+                        class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer mt-3"
+                      >
+                        <div
+                          class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20"
+                        >
+                          <p class="text-center">B</p>
                         </div>
+                        <div class="px-4 py-2.5 w-5/6">Jawaban B</div>
+                      </div>
                     </div>
                     <div>
-                        <div class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer mt-3 lg:mt-0">
-                            <div class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
-                                <p class="text-center">C</p>
-                            </div>
-                            <div class="px-4 py-2.5 w-5/6">
-                                Jawaban C
-                            </div>
+                      <div
+                        class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer mt-3 lg:mt-0"
+                      >
+                        <div
+                          class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20"
+                        >
+                          <p class="text-center">C</p>
                         </div>
-                        <div class="rounded-md border-2 bg-white border-[#364954] overflow-hidden flex cursor-pointer mt-3">
-                            <div class="bg-[#364954] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
-                                <p class="text-center text-white">D</p>
-                            </div>
-                            <div class="px-4 py-2.5 w-5/6">
-                                Jawaban D
-                            </div>
+                        <div class="px-4 py-2.5 w-5/6">Jawaban C</div>
+                      </div>
+                      <div
+                        class="rounded-md border-2 bg-white border-[#364954] overflow-hidden flex cursor-pointer mt-3"
+                      >
+                        <div
+                          class="bg-[#364954] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20"
+                        >
+                          <p class="text-center text-white">D</p>
                         </div>
+                        <div class="px-4 py-2.5 w-5/6">Jawaban D</div>
+                      </div>
                     </div>
                     <div>
-                        <div class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer mt-3 lg:mt-0">
-                            <div class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20">
-                                <p class="text-center">E</p>
-                            </div>
-                            <div class="px-4 py-2.5 w-5/6">
-                                Jawaban E
-                            </div>
+                      <div
+                        class="rounded-md border bg-white border-black border-opacity-25 overflow-hidden flex cursor-pointer mt-3 lg:mt-0"
+                      >
+                        <div
+                          class="bg-[#E3E3E3] px-2 py-2.5 w-1/6 border-r border-black border-opacity-20"
+                        >
+                          <p class="text-center">E</p>
                         </div>
+                        <div class="px-4 py-2.5 w-5/6">Jawaban E</div>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <div class="flex mt-4">
+                  <div
+                    class="text-[12.5px] lg:text-[13px] xl:text-sm font-semibold my-auto"
+                  >
+                    <p>Poin Soal</p>
+                  </div>
+                  <div>
+                    <input
+                      class="ml-3 px-2 py-2 text-center lg:px-3 xl:py-2.5 mr-4 border-2 border-black border-opacity-20 rounded-md w-[80px] lg:w-[100px] block text-xs lg:text-[13px] xl:text-sm"
+                      type="number"
+                      id="poin"
+                      name="poin"
+                    />
                   </div>
                 </div>
                 <div class="flex mt-2">
                   <button
                     class="bg-[#EE982B] py-2 px-3 lg:px-3.5 lg:py-2.5 xl:px-4 xl:py-3 rounded-md mt-3 block mr-auto transition ease-in-out hover:scale-105 duration-200"
                   >
-                    <p class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-black">Cancel</p>
+                    <p
+                      class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-black"
+                    >
+                      Cancel
+                    </p>
                   </button>
                   <button
                     class="bg-green-900 py-2 px-3 lg:px-3.5 lg:py-2.5 xl:px-4 xl:py-3 rounded-md mt-3 block ml-auto transition ease-in-out hover:scale-105 duration-200"
                   >
-                    <p class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-white">Update Soal</p>
+                    <p
+                      class="text-xs lg:text-[13px] xl:text-[13.5px] font-semibold text-white"
+                    >
+                      Update Soal
+                    </p>
                   </button>
                 </div>
               </div>
 
               <!-- TOMBOL TAMBAH SOAL -->
-              <div class="flex mt-7 pb-20 mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-4 h-4"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
-                  />
-                </svg>
-                <a href="#" id="tambahSoalBtn">
-                  <p class="text-xs lg:text-[13px] xl:text-[13.5px] underline font-semibold ml-1 hover:font-bold">Tambah Soal</p>
-                </a>
+              <div class="flex mt-7 pb-12 mb-3">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4 xl:h-[17px] xl:w-[17px] xl:mt-0.5"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
+                    />
+                  </svg>
+                  <a href="#" id="tambahSoalBtn">
+                    <p
+                      class="text-xs lg:text-[13px] xl:text-sm underline font-semibold ml-1 hover:font-bold"
+                    >
+                      Tambah Soal
+                    </p>
+                  </a>
+                </div>
+                <div class="block ml-auto bg-white border-2 border-black border-opacity-20 shadow py-2 px-3 lg:py-2.5 rounded-md">
+                  <p class="font-semibold text-[13px] lg:text-[14.5px]">Bobot Soal: 100</p>
+                </div>
               </div>
 
               <!-- Dropdown untuk jenis soal -->

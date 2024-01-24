@@ -2458,6 +2458,10 @@ video {
     line-height: 2.5rem;
   }
 
+  .lg\:text-\[12\.5px\]{
+    font-size: 12.5px;
+  }
+
   .lg\:text-\[12px\]{
     font-size: 12px;
   }

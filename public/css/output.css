@@ -2075,6 +2075,18 @@ video {
     height: 80px;
   }
 
+  .sm\:h-\[260px\]{
+    height: 260px;
+  }
+
+  .sm\:h-\[230px\]{
+    height: 230px;
+  }
+
+  .sm\:h-\[250px\]{
+    height: 250px;
+  }
+
   .sm\:w-1\/3{
     width: 33.333333%;
   }
@@ -2093,6 +2105,30 @@ video {
 
   .sm\:w-\[80px\]{
     width: 80px;
+  }
+
+  .sm\:w-\[\]{
+    width: ;
+  }
+
+  .sm\:w-\[350px\]{
+    width: 350px;
+  }
+
+  .sm\:w-\[0px\]{
+    width: 0px;
+  }
+
+  .sm\:w-\[20px\]{
+    width: 20px;
+  }
+
+  .sm\:w-\[260px\]{
+    width: 260px;
+  }
+
+  .sm\:w-\[320px\]{
+    width: 320px;
   }
 
   .sm\:grid-cols-2{
@@ -2212,6 +2248,18 @@ video {
     height: 85px;
   }
 
+  .md\:h-\[250px\]{
+    height: 250px;
+  }
+
+  .md\:h-\[20px\]{
+    height: 20px;
+  }
+
+  .md\:h-\[270px\]{
+    height: 270px;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -2242,6 +2290,18 @@ video {
 
   .md\:w-\[85px\]{
     width: 85px;
+  }
+
+  .md\:w-\[320px\]{
+    width: 320px;
+  }
+
+  .md\:w-\[30px\]{
+    width: 30px;
+  }
+
+  .md\:w-\[340px\]{
+    width: 340px;
   }
 
   .md\:grid-cols-2{
@@ -2458,6 +2518,14 @@ video {
     height: 90px;
   }
 
+  .lg\:h-\[270px\]{
+    height: 270px;
+  }
+
+  .lg\:h-\[300px\]{
+    height: 300px;
+  }
+
   .lg\:w-1\/4{
     width: 25%;
   }
@@ -2496,6 +2564,26 @@ video {
 
   .lg\:w-\[90px\]{
     width: 90px;
+  }
+
+  .lg\:w-\[350px\]{
+    width: 350px;
+  }
+
+  .lg\:w-\[0px\]{
+    width: 0px;
+  }
+
+  .lg\:w-\[400px\]{
+    width: 400px;
+  }
+
+  .lg\:w-\[420px\]{
+    width: 420px;
+  }
+
+  .lg\:w-\[430px\]{
+    width: 430px;
   }
 
   .lg\:grid-cols-3{
@@ -2575,6 +2663,16 @@ video {
     padding-bottom: 1.75rem;
   }
 
+  .lg\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg\:px-2\.5{
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2621,6 +2719,10 @@ video {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:leading-relaxed{
+    line-height: 1.625;
   }
 
   .lg\:tracking-normal{
@@ -2771,6 +2873,14 @@ video {
     height: 95px;
   }
 
+  .xl\:h-\[300px\]{
+    height: 300px;
+  }
+
+  .xl\:h-\[290px\]{
+    height: 290px;
+  }
+
   .xl\:w-\[16px\]{
     width: 16px;
   }
@@ -2797,6 +2907,18 @@ video {
 
   .xl\:w-\[95px\]{
     width: 95px;
+  }
+
+  .xl\:w-\[430px\]{
+    width: 430px;
+  }
+
+  .xl\:w-\[450px\]{
+    width: 450px;
+  }
+
+  .xl\:w-\[440px\]{
+    width: 440px;
   }
 
   .xl\:gap-20{

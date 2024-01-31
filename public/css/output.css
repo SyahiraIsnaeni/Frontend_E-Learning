@@ -2112,6 +2112,10 @@ video {
     padding-bottom: 1rem;
   }
 
+  .sm\:text-center{
+    text-align: center;
+  }
+
   .sm\:text-right{
     text-align: right;
   }
@@ -2209,6 +2213,14 @@ video {
 
   .md\:mt-\[3\.5px\]{
     margin-top: 3.5px;
+  }
+
+  .md\:mt-2{
+    margin-top: 0.5rem;
+  }
+
+  .md\:mt-2\.5{
+    margin-top: 0.625rem;
   }
 
   .md\:block{
@@ -2351,6 +2363,10 @@ video {
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:text-\[\]{
+    color: ;
   }
 }
 
@@ -2703,6 +2719,10 @@ video {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-\[14px\]{
+    font-size: 14px;
   }
 
   .lg\:leading-relaxed{

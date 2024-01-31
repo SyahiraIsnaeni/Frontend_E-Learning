@@ -2506,6 +2506,10 @@ video {
     margin-top: 3px;
   }
 
+  .lg\:mt-3\.5{
+    margin-top: 0.875rem;
+  }
+
   .lg\:flex{
     display: flex;
   }

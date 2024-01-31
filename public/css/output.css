@@ -883,6 +883,10 @@ video {
   margin-top: 5px;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
 .block{
   display: block;
 }
@@ -1122,6 +1126,22 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-1\/5{
+  width: 20%;
+}
+
+.w-\[80\]{
+  width: 80;
+}
+
+.w-\[75\]{
+  width: 75;
+}
+
+.w-\[75px\]{
+  width: 75px;
 }
 
 .max-w-md{
@@ -1429,6 +1449,10 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\]{
+  background-color: ;
 }
 
 .bg-opacity-75{
@@ -1745,6 +1769,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\]{
+  color: ;
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -1885,6 +1913,10 @@ video {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.first-line\:flex::first-line{
+  display: flex;
 }
 
 .hover\:-translate-y-0:hover{
@@ -2223,6 +2255,10 @@ video {
     margin-top: 0.625rem;
   }
 
+  .md\:mt-7{
+    margin-top: 1.75rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -2295,6 +2331,10 @@ video {
     width: 85px;
   }
 
+  .md\:w-\[80px\]{
+    width: 80px;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2332,6 +2372,31 @@ video {
     padding-bottom: 1.25rem;
   }
 
+  .md\:py-2\.5{
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .md\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:py-3\.5{
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .md\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .md\:px-3\.5{
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
   .md\:text-\[12\.5px\]{
     font-size: 12.5px;
   }
@@ -2367,6 +2432,10 @@ video {
 
   .md\:text-\[\]{
     color: ;
+  }
+
+  .md\:text-\[13\.\]{
+    color: 13.;
   }
 }
 
@@ -2508,6 +2577,10 @@ video {
 
   .lg\:mt-3\.5{
     margin-top: 0.875rem;
+  }
+
+  .lg\:mt-5{
+    margin-top: 1.25rem;
   }
 
   .lg\:flex{
@@ -2735,6 +2808,10 @@ video {
 
   .lg\:tracking-normal{
     letter-spacing: 0em;
+  }
+
+  .lg\:text-\[\]{
+    color: ;
   }
 
   .lg\:placeholder\:text-\[12\.5px\]::-moz-placeholder{
@@ -3070,6 +3147,10 @@ video {
 
   .xl\:tracking-normal{
     letter-spacing: 0em;
+  }
+
+  .xl\:text-\[\]{
+    color: ;
   }
 
   .xl\:placeholder\:text-sm::-moz-placeholder{

@@ -2396,6 +2396,26 @@ video {
     width: 0.875rem;
   }
 
+  .md\:w-1\/4{
+    width: 25%;
+  }
+
+  .md\:w-1\/5{
+    width: 20%;
+  }
+
+  .md\:w-\[\]{
+    width: ;
+  }
+
+  .md\:w-\[6px\]{
+    width: 6px;
+  }
+
+  .md\:w-1\/6{
+    width: 16.666667%;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2730,6 +2750,10 @@ video {
 
   .lg\:w-\[90px\]{
     width: 90px;
+  }
+
+  .lg\:w-1\/12{
+    width: 8.333333%;
   }
 
   .lg\:grid-cols-3{
@@ -3070,6 +3094,10 @@ video {
 
   .xl\:w-\[95px\]{
     width: 95px;
+  }
+
+  .xl\:w-1\/12{
+    width: 8.333333%;
   }
 
   .xl\:gap-20{

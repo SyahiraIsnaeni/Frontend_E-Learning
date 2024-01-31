@@ -1447,6 +1447,10 @@ video {
   --tw-bg-opacity: 0.95;
 }
 
+.fill-current{
+  fill: currentColor;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1935,6 +1939,11 @@ video {
   color: rgb(215 128 16 / var(--tw-text-opacity));
 }
 
+.hover\:text-orange-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
 .hover\:text-oren:hover{
   --tw-text-opacity: 1;
   color: rgb(238 152 43 / var(--tw-text-opacity));
@@ -2093,6 +2102,10 @@ video {
     padding-bottom: 1rem;
   }
 
+  .sm\:text-center{
+    text-align: center;
+  }
+
   .sm\:text-right{
     text-align: right;
   }
@@ -2166,6 +2179,14 @@ video {
 
   .md\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .md\:mt-2{
+    margin-top: 0.5rem;
+  }
+
+  .md\:mt-2\.5{
+    margin-top: 0.625rem;
   }
 
   .md\:mt-24{

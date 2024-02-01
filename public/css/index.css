@@ -2628,6 +2628,10 @@ video {
     margin-top: 8rem;
   }
 
+  .lg\:mt-4{
+    margin-top: 1rem;
+  }
+
   .lg\:mt-5{
     margin-top: 1.25rem;
   }

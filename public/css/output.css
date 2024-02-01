@@ -2815,6 +2815,10 @@ video {
     margin-top: 3px;
   }
 
+  .lg\:mt-4{
+    margin-top: 1rem;
+  }
+
   .lg\:block{
     display: block;
   }

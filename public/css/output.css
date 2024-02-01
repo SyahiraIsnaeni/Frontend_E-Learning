@@ -1212,8 +1212,37 @@ video {
   width: 15px;
 }
 
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-\[150px\]{
+  width: 150px;
+}
+
+.w-\[120px\]{
+  width: 120px;
+}
+
+.w-\[125px\]{
+  width: 125px;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-md{
   max-width: 28rem;
+}
+
+.flex-shrink-0{
+  flex-shrink: 0;
 }
 
 .shrink{
@@ -1243,6 +1272,10 @@ video {
 
 .resize{
   resize: both;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .grid-cols-1{
@@ -1285,6 +1318,10 @@ video {
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 .justify-evenly{
   justify-content: space-evenly;
 }
@@ -1316,6 +1353,12 @@ video {
 
 .gap-y-4{
   row-gap: 1rem;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden{
@@ -1562,6 +1605,11 @@ video {
   background-color: rgb(160 229 127 / var(--tw-bg-opacity));
 }
 
+.bg-blue-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-75{
   --tw-bg-opacity: 0.75;
 }
@@ -1705,6 +1753,10 @@ video {
 
 .pr-10{
   padding-right: 2.5rem;
+}
+
+.pl-6{
+  padding-left: 1.5rem;
 }
 
 .text-center{
@@ -1901,6 +1953,11 @@ video {
   color: 13;
 }
 
+.text-gray-800{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -2086,6 +2143,15 @@ video {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\]:hover{
+  background-color: ;
+}
+
+.hover\:bg-\[\#EE982B\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 152 43 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover{
   font-weight: 700;
 }
@@ -2105,6 +2171,16 @@ video {
 }
 
 .hover\:text-oren:hover{
+  --tw-text-opacity: 1;
+  color: rgb(238 152 43 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-200:hover{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#EE982B\]:hover{
   --tw-text-opacity: 1;
   color: rgb(238 152 43 / var(--tw-text-opacity));
 }
@@ -2394,6 +2470,14 @@ video {
     margin-top: 3.5px;
   }
 
+  .md\:mr-12{
+    margin-right: 3rem;
+  }
+
+  .md\:mt-8{
+    margin-top: 2rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -2480,6 +2564,10 @@ video {
 
   .md\:w-\[85px\]{
     width: 85px;
+  }
+
+  .md\:w-1\/4{
+    width: 25%;
   }
 
   .md\:grid-cols-2{

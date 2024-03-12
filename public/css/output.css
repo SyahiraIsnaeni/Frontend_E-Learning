@@ -891,6 +891,14 @@ video {
   margin-top: 5px;
 }
 
+.mr-1{
+  margin-right: 0.25rem;
+}
+
+.mr-1\.5{
+  margin-right: 0.375rem;
+}
+
 .block{
   display: block;
 }
@@ -1054,6 +1062,10 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-5{
+  height: 1.25rem;
 }
 
 .w-1\/2{
@@ -1505,6 +1517,16 @@ video {
 
 .bg-\[\]{
   background-color: ;
+}
+
+.bg-\[\#FF8282\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 130 130 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FF7272\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 114 114 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-75{
@@ -2187,6 +2209,10 @@ video {
     gap: 1.75rem;
   }
 
+  .sm\:gap-6{
+    gap: 1.5rem;
+  }
+
   .sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2450,6 +2476,14 @@ video {
 
   .md\:gap-12{
     gap: 3rem;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
+  }
+
+  .md\:gap-7{
+    gap: 1.75rem;
   }
 
   .md\:px-10{
@@ -2798,6 +2832,10 @@ video {
 
   .lg\:gap-16{
     gap: 4rem;
+  }
+
+  .lg\:gap-10{
+    gap: 2.5rem;
   }
 
   .lg\:gap-x-5{
@@ -3161,6 +3199,14 @@ video {
 
   .xl\:gap-16{
     gap: 4rem;
+  }
+
+  .xl\:gap-12{
+    gap: 3rem;
+  }
+
+  .xl\:gap-10{
+    gap: 2.5rem;
   }
 
   .xl\:px-10{

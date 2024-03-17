@@ -803,6 +803,10 @@ video {
   margin-right: 0.25rem;
 }
 
+.mr-1\.5{
+  margin-right: 0.375rem;
+}
+
 .mr-12{
   margin-right: 3rem;
 }
@@ -1027,6 +1031,10 @@ video {
   height: 140px;
 }
 
+.h-\[17px\]{
+  height: 17px;
+}
+
 .h-\[18px\]{
   height: 18px;
 }
@@ -1134,6 +1142,14 @@ video {
 
 .w-\[15px\]{
   width: 15px;
+}
+
+.w-\[17px\]{
+  width: 17px;
+}
+
+.w-\[18px\]{
+  width: 18px;
 }
 
 .w-\[20px\]{
@@ -1244,6 +1260,10 @@ video {
 
 .justify-evenly{
   justify-content: space-evenly;
+}
+
+.gap-1{
+  gap: 0.25rem;
 }
 
 .gap-10{
@@ -1453,14 +1473,14 @@ video {
   background-color: rgb(238 232 169 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#EF972C\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 151 44 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#F1F1E6\]{
   --tw-bg-opacity: 1;
   background-color: rgb(241 241 230 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F6F551\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 245 81 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#FF7272\]{
@@ -1973,6 +1993,14 @@ video {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.placeholder\:text-\[13\.5px\]::-moz-placeholder{
+  font-size: 13.5px;
+}
+
+.placeholder\:text-\[13\.5px\]::placeholder{
+  font-size: 13.5px;
 }
 
 .hover\:-translate-y-0:hover{
@@ -3118,6 +3146,10 @@ video {
 
   .xl\:w-\[95px\]{
     width: 95px;
+  }
+
+  .xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-4{

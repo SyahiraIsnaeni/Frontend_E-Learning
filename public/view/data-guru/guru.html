@@ -124,37 +124,58 @@
 
     <!-- DATA -->
     <section class="mt-7 mb-10 xl:mt-10">
-      <div
-        class="mx-5 sm:mx-8 lg:mx-10 xl:mx-20"
-      >
-      <!-- BUTTON -->
+      <div class="mx-5 sm:mx-8 lg:mx-10 xl:mx-20">
+        <!-- SEARCH AND OPTION -->
         <div class="md:flex justify-evenly">
-            <a href="#">
-                <div class="bg-[#EE982B] rounded-md px-3 py-2 flex w-fit hover:scale-105 duration-300 ease-in-out">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[17px] h-[17px] mr-1.5" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
-                    <p class="text-[13px] sm:text-[13.5px] font-medium">Tambah Guru</p>
+            <div class="relative border border-black text-[13px] border-opacity-30 rounded-md">
+                <select class="block focus:outline-none w-full rounded-md bg-whi
+                te px-2 py-2 leading-tight">
+                  <option disabled selected>Pilih Kelas</option>
+                  <option>Kelas XI IPA 1</option>
+                  <option>Kelas XI IPA 2</option>
+                  <option>Kelas XI IPA 3</option>
+                  <option>Kelas XI IPS 1</option>
+                  <option>Kelas XI IPS 2</option>
+                  <option>Kelas XI IPS 3</option>
+                  <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
+                </select>
+                <div class="bg-white rounded-md pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <svg class="fill-current h-5 w-5 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M14.293 5.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L10 8.586l3.293-3.293z"/></svg>
                 </div>
-            </a>
-            <a href="#">
-                <div class="bg-[#01C91A] mt-2 rounded-md px-3 py-2 flex w-fit hover:scale-105 duration-300 ease-in-out">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[17px] h-[17px] mr-1.5" viewBox="0 0 512 512"><path d="M128 64c0-35.3 28.7-64 64-64H352V128c0 17.7 14.3 32 32 32H512V448c0 35.3-28.7 64-64 64H192c-35.3 0-64-28.7-64-64V336H302.1l-39 39c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l39 39H128V64zm0 224v48H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H128zM512 128H384V0L512 128z"/></svg>
-                    <p class="text-[13px] sm:text-[13.5px] font-medium">Import Data dari Web Utama</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="bg-[#763500] mt-2 rounded-md px-3 py-2 flex w-fit hover:scale-105 duration-300 ease-in-out">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] mr-1" fill="#fff" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-                    <p class="text-[13px] sm:text-[13.5px] font-medium text-white">Reset Data Guru</p>
-                </div>
-            </a>
-            <div class="border mt-2 rounded-md border-black border-opacity-30 bg-white px-3 flex">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[18px] h-[18px] mt-2 opacity-50 mr-2"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-                <input class="py-2 placeholder:text-[13.5px] text-sm" placeholder="Cari guru...">
-            </div>
+              </div>
+          <div
+            class="border mt-3 rounded-md border-black border-opacity-30 bg-white px-3 flex"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="w-[18px] h-[18px] mt-2 opacity-50 mr-2"
+            >
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              />
+            </svg>
+            <input
+              class="py-2 placeholder:text-[13.5px] text-sm"
+              placeholder="Cari guru..."
+            />
+          </div>
         </div>
         <div class="mt-5">
+            <form>
+                <table class="justify-evenly w-full">
+                    <thead>
+                        <tr>
+                            <th class="border px-1 py-1 border-black bg-[#99AEBB] bg-opacity-60 text-sm font-medium">Nama</th>
+                            <th class="border border-black bg-[#99AEBB] bg-opacity-60 text-sm font-medium">NIP</th>
+                            <th class="border border-black bg-[#99AEBB] bg-opacity-60 text-sm font-medium">Kelas</th>
+                            <th class="border border-black bg-[#99AEBB] bg-opacity-60 text-sm font-medium">Aksi</th>
+                        </tr>
+                    </thead>
+                </table>
+            </form>
         </div>
-    </div>
+      </div>
     </section>
 
     <!-- COPYRIGHT -->
